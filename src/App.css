@@ -1,38 +1,130 @@
-.App {
-  text-align: center;
+html{
+    font-size: 62.5%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1{
+    font-size: 10rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h3{
+    font-size: 6rem;
 }
 
-.App-link {
-  color: #61dafb;
+.main{
+    background-image: url('./assets/bg.jpg');
+    background-size: cover;
+    height: 100vh;
+    object-fit: cover;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.overlay{
+    background-color: rgb(0, 0, 0, 0.6);
+    height: 100vh;
+}
+
+.container{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 70%;
+    margin: auto;
+    padding: 10rem;
+}
+
+.home{
+    margin-bottom: 3rem;
+    display: flex;
+    gap: 5rem;
+}
+
+.form-container{
+    margin: auto;
+    position: relative;
+    width: 40%;
+    height: 6vh;
+    border: 4px solid #fff;
+    padding: 0rem 1rem;
+    border-radius: 3rem;
+}
+
+.form-container form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.search{
+    border: none;
+    width: 80%;
+    height: 100%;
+    padding: 2rem 0;
+    background-color: transparent;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    font-size: 2rem;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.weatherCard-container{
+    width: 75%;
+    margin: 3rem auto;
+    padding: 1rem;
+    border-radius: 3rem;
+
+    -webkit-box-shadow: 0px 0px 10px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px -4px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px -4px rgba(0,0,0,0.75);
+}
+
+.temp-container{
+    display: flex;
+}
+
+.temp-container img{
+    width: 10rem;
+    height: 10rem;
+}
+
+.temp-info{
+    font-size: 10rem;
+    font-weight: 200;
+}
+
+.info-container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.city-name{
+    font-size: 6rem;
+    padding-right: 2rem;
+    border-right: 2px solid white;
+}
+
+.more-info{
+    margin-left: 2rem;
+}
+
+.more-info ul{
+    list-style: none;
+    font-size: 3rem;
+}
+
+.img-info{
+    display: flex;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
 }
