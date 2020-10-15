@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { motion } from 'framer-motion';
 
 import './App.css';
 import Home from './components/Home';
@@ -30,11 +31,19 @@ const App = () => {
   return (
     <div className="main">
       <div className="overlay">
-        <div className="container">
+        <motion.div 
+          className="container"
+          animate={{ opacity: 1 }}
+          transition={{ ease: "easeIn", duration: 1 }}
+        >
           <Home />
           <WeatherForm setWeatherInfo={setWeatherInfo} setIsLoading={setIsLoading} />
-          {isLoading ? <Spinner /> : <Weather weatherInfo={weatherInfo} />}
-        </div>
+          {
+            isLoading ? 
+            <Spinner /> : 
+            <Weather weatherInfo={weatherInfo} />
+          }
+        </motion.div>
       </div>
     </div>
   );

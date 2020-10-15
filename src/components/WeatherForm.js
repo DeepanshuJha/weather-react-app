@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { motion } from 'framer-motion'
 import search from '../assets/search.svg'
 import axios from 'axios';
 
@@ -21,7 +22,9 @@ const WeatherForm = ({ setWeatherInfo, setIsLoading }) => {
     }
 
     return (
-        <div className="form-container">
+        <motion.div 
+            className="form-container"            
+        >
             <form onSubmit={onSubmit}>
                 <input
                     type="text"
@@ -31,7 +34,7 @@ const WeatherForm = ({ setWeatherInfo, setIsLoading }) => {
                 />
                 <button type="submit"><img src={search} alt=""/></button>
             </form>
-        </div>
+        </motion.div>
     )
 }
 
