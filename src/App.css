@@ -126,5 +126,5 @@ button{
 .img-info{
     display: flex;
     grid-template-columns: 1fr 2fr;
-    gap: 1rem;
+    gap: 2rem;
 }

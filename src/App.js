@@ -23,7 +23,7 @@ const App = () => {
           .catch(err => console.log(err))
       });
     } else {
-      console.log("Not Available");
+      console.log("NA");
     }
   }, []);
 
